@@ -1,0 +1,222 @@
+html{
+  background-color: white;
+  margin-left: 20px;
+  margin-right:20px;
+  margin-top: 10px;
+  text-align: center;
+  
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+body{
+  margin-left: 20px;
+  margin-right:20px;
+  margin-top: 10px;
+}
+
+
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li  {
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111111;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+
+  footer{
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color: black;
+    text-align: center;
+    color:white;
+    
+  }
+
+  .navbar{
+    display:flex;
+    position:relative;
+    justify-content: center;
+    list-style-type: none;
+  }
+
+  .navbar>li{
+    background-color: black;
+    font-weight: bold;
+    font-size: 200%;
+    padding: 10px;
+    margin:10px;
+    display:flex;
+    position:relative;
+    justify-content: center;
+    list-style-type: none;
+  }
+
+  .navbar>li>a:hover{
+    font-size: 100%;
+    line-height:100%;
+    color:red;
+  }
+
+  .navbar>li>a:active{
+    font-size: 100%;
+    line-height:100%;
+    color:blue;
+  }
+
+  .navbar>li>a:visited{
+    font-size: 100%;
+    line-height:100%;
+    color:blue;
+  }
+
+  .products{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 15px;
+    margin: 15px auto;
+  }
+
+  .card{
+    margin: 12px;
+    padding: 15px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: inset;
+    border: 2px solid black;
+    box-shadow: 10px 5px 5px black;
+  }
+  .cardDetails{
+    padding:15px 20px;
+    text-align: justify;
+  }
+  .price{
+    display:inline-block;
+    background-color: black;
+    border-radius: 150px;
+    font-size: 100%;
+    font-weight: bold;
+    color: white;
+  }
+
+  .bg-image{
+    background-image: url("decoration.jpeg");
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    position:relative;
+    background-size: cover;
+  }
+  .bg-image img{
+    z-index: -20;
+    opacity: 0.2;
+
+  }
+  label{
+    color: white;
+    font-weight: bold;
+    display: block;
+    color: white;
+  }
+
+  label::first-letter{
+    font-size: 200%;
+    font-weight: bold;
+    color:white;
+  }
+  input[type=text]{
+    width:50%;
+    padding:10px;
+    margin:5px 0 2px 0;
+    border:none;
+    background: green;
+  }
+  input[type=text]:focus,input[type=email]:focus,textarea{
+    background-color: white;
+    outline: 2px;
+  }
+  .deal{
+    display:inline-block;
+    background-color: red;
+    border-radius: 150px;
+    font-size: 100%;
+    font-weight: bold;
+    color: white;
+  }
+
+  .dealImg{
+    width: 80%;
+    height:80%;
+  }
+
+.dealImg:hover{
+  transform:scale(1.25);
+}
+.heck{
+  
+  font-size: 50px;
+
+}
