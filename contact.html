@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<link rel ="stylesheet" href="style.css" type="text/css"> 
+<script src=https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp Links to an external site.></script>
+<style>
+  
+  
+  img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+/* form:first-letter{
+   font-size: 200%;
+   color: red;
+ } */
+ /* form::first-letter{
+   font-size: 200%;
+   color: red;
+ } */
+ input[id="tex"]::first-letter{
+   font-size: 200%;
+   color: red;
+ }
+/* form {
+  color: white;
+  font-family:"verdana";
+  
+} */
+p {
+  color: red;
+  font-family:"Times new romen";
+}
+h1 {
+  color: white;
+  font-family:"Courier New";
+}
+input[type=text]:focus {
+     				background-color: lightblue;} 
+
+
+</style>
+<body>
+  <header role = "banner">
+    <h1 class="heck">Welcome to Our Christmas Store</h1> 
+        <p>This page should be tried in safari, chrome or Mozila.</p> 
+        <nav>
+          <ul class="navbar">
+            <li><a href="index.html">Home                </a></li>
+            <li><a href="contact.html">Contact us        </a></li>
+            <li><a href="deals.html ">Today's Deal</a></li>
+          </ul>
+        </nav> 
+      <img src="Santa-Claus.jpeg" alt="Girl in a jacket" style="width:100%">
+    </header> 
+  <footer>
+    <p class="text-center ...">© 2019 Ankur Dhadoti</p>
+  </footer>      
+
+<h1 style="text-align:center">Contact Us</h1>
+<div class="bg-image">
+  <form style="border: 1px solid black;padding-left: 20px; ">
+
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value=""><br>
+  
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value=""><br>
+  
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email" value=""><br>
+  
+    <label for="tex">Your Message:</label><br>
+    <input type="text" id="tex" name="tex" value=""><br>
+    
+    <input type="submit" value="Submit">
+  </form> 
+</div>
+<script>
+  document.getElementById("Submit").innerHTML = "Hello World";
+</script>
+
+
+<p><strong>Note:</strong>The default maximum cahracter lenght is 20.</p>  
+</body>
+<script>
+  document.getElementById("submit").style.color = "red";
+  </script>
+</html>
